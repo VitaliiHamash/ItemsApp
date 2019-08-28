@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, StatusBar,TouchableOpacity } from 'react-native
 import Logo from '../components/Logo';
 import Form from '../components/Form';
 import { Actions} from 'react-native-router-flux';
+
+
 export default class Login extends Component {
     
   signup(){

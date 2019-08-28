@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { Actions} from 'react-native-router-flux';
 
 export default class Logo extends Component {
+
+
+    MainScreen(){
+        Actions.MainScreen()
+      }
+
+
+
     render() {
         return (
             <View style={styles.container}>
@@ -18,7 +27,7 @@ export default class Logo extends Component {
                 />
 
                 <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}>{this.props.type}</Text>
+                    <Text style={styles.buttonText} onPress={this.MainScreen}>{this.props.type}</Text>
                 </TouchableOpacity>
             </View>
         )
